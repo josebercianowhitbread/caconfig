@@ -44,6 +44,9 @@
                         <Sling-Model-Packages>
                             caconfig.core
                         </Sling-Model-Packages>
+                        <Sling-ContextAware-Configuration-Classes>
+                            caconfig.core.caconfig.ExampleConfiguration
+                        </Sling-ContextAware-Configuration-Classes>
                     </instructions>
                 </configuration>
             </plugin>

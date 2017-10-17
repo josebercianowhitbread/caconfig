@@ -1,0 +1,18 @@
+<div>
+	<h1>Context-Aware Configuration component</h1>
+	<p>Simple component to show how to use caconfigs from Java classes and HTL</p>
+</div>
+<div>
+	<h2>From HTL</h2>
+	<p>Fetching config value: ${caconfig['caconfig.core.caconfig.ExampleConfiguration'].customValue}</p>
+</div>	
+<div data-sly-use.example="${'caconfig.core.wcmuse.ExampleWCMUse'}">
+	<h2>From Java WCMUsePojo</h2>
+	<p>
+		Fetching config value: ${example.customValue}
+	</p>
+	<h3>Listing child pages based on configuration:</h3>
+	<ul data-sly-list.child=${example.customList}>
+		<li><strong>${child.title}</strong> (${child.path})</li>
+	</ul>
+</div>
